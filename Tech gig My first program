@@ -1,0 +1,21 @@
+/*Hello TechGig (100 Marks)
+For this code challenge, you need to read a line from stdin and store it to a variable, print 'Hello Techgig' and then on another line, print the variable's value.
+A single line to be taken as input and save it into a variable of your choice.
+
+Input Format
+A single line to be taken as input and save it into a variable of your choice. 
+
+Constraints
+1 <  |s| < 10000
+
+Output Format
+Print 'Hello Techgig' and then content of the variable on another line. */
+
+#include <iostream>
+using namespace std;
+int main()
+{
+   char line[10000];
+   cin.get( line, 10000 );
+   cout << "Hello Techgig\n"<<line;
+}
