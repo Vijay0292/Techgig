@@ -1,0 +1,28 @@
+/*Exploring Data Types (100 Marks)
+For this challenge, you need to read a line from stdin and check whether it is of type integer, float or string.
+If input is-
+    Integer print 'This input is of type Integer.' to the stdout
+    Float print 'This input is of type Float.' to the stdout
+    String print 'This input is of type string.' to the stdout
+    else print 'This is something else.' to the stdout*/
+    #include <stdio.h>
+#include <stdlib.h>
+int main() {
+   char input[50] = "";
+   float temp;
+   int intVal;
+   char stringVal[50] = "";
+   float val = 1e-12;
+   fgets(input, 100, stdin);
+   if (sscanf(input, "%lf", &temp) == 1) {
+      intVal = (int)temp;
+      if (fabs(temp - intVal) / temp > val)
+         printf("This input is of type Float.\n");
+      else
+         printf("This input is of type Integer.\n");
+   }
+   else if (sscanf(input, "%s", stringVal) == 1)
+      printf("This input is of type string.\n");
+   else
+      printf("This is something else.\n");
+}
