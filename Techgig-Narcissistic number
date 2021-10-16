@@ -1,0 +1,32 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main()
+{
+   { int x, y, orn;int a = 0;
+     int sum = 0;
+     cin>>orn;
+     x = orn;
+   while (x>0)
+    {
+        x = x/10;
+        a++;
+    }
+    x = orn;
+    while (x>0)
+    {
+        y = x%10;
+        sum = sum + pow(y,a);
+        x=x/10;
+    }
+    if (orn==sum)
+    {
+       cout<<"True"<<endl; 
+    }
+    else 
+    {
+        cout<<"False"<<endl;
+    }
+}
+return 0;
+}
