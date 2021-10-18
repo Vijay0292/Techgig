@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int i;
+    int upper=0,lower=0;
+    char ch[100];
+    cin.get(ch,100);
+
+    for(i=0; ch[i]!=0; i++){
+
+if(ch[i]>='A' && ch[i]<='Z'){
+    upper++;
+}
+else if(ch[i]>='a' && ch[i]<='z'){
+    lower++;
+}
+    }
+cout<<upper<<endl;
+cout<<lower<<endl;
+    return 0;
+}
