@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int x;
+    cin>>x;
+    int y = x%3;
+    if (y == 0)
+    {
+        cout<<"The number is multiple of 3";
+    }
+    else
+    {cout<<"The number is not a multiple of 3";
+    }
+    return 0;
+}
