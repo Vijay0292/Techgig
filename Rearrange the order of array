@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a[] = {1,2,3,4,5};
+    int b[5];
+    int x; cin>>x;
+    b[0] = a[x-1];
+    for(int i=0; i<x-1; i++)
+    {
+        b[i+1]=a[i];
+    }
+    for(int i=x;i<5; i++)
+    {
+         b[i]=a[i];
+    }
+    for(int i=0; i<5; i++)
+    {
+        cout<<b[i]<<endl;
+    }
+    return 0;
+}
